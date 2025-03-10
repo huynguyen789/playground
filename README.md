@@ -174,7 +174,8 @@ After mastering the basics with this calculator example, try building more compl
 - `calculator_server.py`: Example MCP server implementation
 - `example_client.py`: Client to test the server
 - `test_calculator.py`: Unit tests
-- `run_calculator_mcp.sh`: Wrapper script for Cursor integration
+- `run_mcp_server.sh`: Wrapper script for Cursor integration
+- `run_dev.sh`: Script to run the server in development mode
 
 ## Resources
 

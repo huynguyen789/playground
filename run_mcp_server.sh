@@ -1,6 +1,6 @@
 #!/bin/bash
-# File: run_calculator_mcp.sh
-# Wrapper script for running the calculator MCP server in Cursor
+# File: run_mcp_server.sh
+# Wrapper script for running the MCP server in Cursor
 
 # Get the directory of this script
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"

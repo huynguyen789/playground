@@ -7,14 +7,14 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
     requirements = fh.read().splitlines()
 
 setup(
-    name="mcp-calculator",
+    name="building_mcp_python",
     version="0.1.0",
     author="Your Name",
     author_email="your.email@example.com",
-    description="A simple calculator MCP server example",
+    description="A guide to building MCP servers with Python",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/mcp-python-calculator",
+    url="https://github.com/yourusername/building_mcp_python",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

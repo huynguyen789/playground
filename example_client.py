@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Example MCP client for the Calculator Server.
+Example MCP client for testing the server.
 
-This script demonstrates how to use the MCP client to interact with the calculator server.
+This script demonstrates how to use the MCP client to interact with the MCP server.
 It connects to the server, lists available tools, and performs some calculations.
 """
 
@@ -15,7 +15,7 @@ async def main():
     Main function that demonstrates client usage.
     
     Input: None
-    Process: Connects to the calculator server and performs operations
+    Process: Connects to the MCP server and performs operations
     Output: Calculation results
     """
     # Create server parameters for stdio connection
@@ -25,16 +25,16 @@ async def main():
         env=None
     )
 
-    print("Connecting to calculator server...")
+    print("Connecting to MCP server...")
     async with stdio_client(server_params) as (read, write):
         async with ClientSession(read, write) as session:
             # Initialize the connection
             await session.initialize()
-            print("Connected to calculator server!")
+            print("Connected to MCP server!")
 
             # List available tools
             tools_response = await session.list_tools()
-            print("\nAvailable calculator tools:")
+            print("\nAvailable tools:")
             
             # Extract the actual tools list from the response
             if hasattr(tools_response, 'tools') and tools_response.tools:

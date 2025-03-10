@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "calculator": {
-      "command": "./run_calculator_mcp.sh"
+      "command": "./run_mcp_server.sh"
     }
   }
 } 
